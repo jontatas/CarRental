@@ -12,6 +12,7 @@ namespace Core.Common.Tests
         {
             TestClass objTest = new TestClass();
             bool propertyChanged = false;
+            int p = 0;
 
             objTest.PropertyChanged += (s, e) =>
                 {
