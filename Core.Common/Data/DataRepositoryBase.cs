@@ -12,6 +12,10 @@ namespace Core.Common.Data
         where T: class, IIdentifiableEntity, new()
         where U: DbContext, new()
     {
+        protected abstract T AddEntity(U entityContext, T entity);
+
+        protected abstract T UpdateEntity(U entityContext, T entity);
+
         public T Add(T entity)
         {
             throw new NotImplementedException();
